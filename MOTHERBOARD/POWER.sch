@@ -1,0 +1,845 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "POWER"
+Date "2021-05-26"
+Rev "1"
+Comp "OHMMUSICCOLLECTIVE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3300 1600 3100 1600
+Wire Wire Line
+	3300 2600 1700 2600
+Wire Wire Line
+	4700 1600 4900 1600
+Wire Wire Line
+	4900 1600 4900 2000
+Wire Wire Line
+	4900 2000 4700 2000
+Wire Wire Line
+	4700 2250 4900 2250
+Wire Wire Line
+	4900 2250 4900 2600
+Wire Wire Line
+	4900 2600 4700 2600
+Wire Wire Line
+	4400 2600 4100 2600
+Wire Wire Line
+	4100 2600 4100 2000
+Wire Wire Line
+	4100 2000 4400 2000
+Wire Wire Line
+	4400 2250 4250 2250
+Wire Wire Line
+	4250 2250 4250 1600
+Wire Wire Line
+	4250 1600 4400 1600
+$Comp
+L Diode:1N4002 D201
+U 1 1 60AA91F5
+P 4550 1600
+F 0 "D201" H 4550 1383 50  0000 C CNN
+F 1 "1N4002" H 4550 1474 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4550 1425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4550 1600 50  0001 C CNN
+	1    4550 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4002 D202
+U 1 1 60AACD02
+P 4550 2000
+F 0 "D202" H 4550 1783 50  0000 C CNN
+F 1 "1N4002" H 4550 1874 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4550 1825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4550 2000 50  0001 C CNN
+	1    4550 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4002 D203
+U 1 1 60AAD66A
+P 4550 2250
+F 0 "D203" H 4550 2467 50  0000 C CNN
+F 1 "1N4002" H 4550 2376 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4550 2075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4550 2250 50  0001 C CNN
+	1    4550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4002 D204
+U 1 1 60AAE281
+P 4550 2600
+F 0 "D204" H 4550 2817 50  0000 C CNN
+F 1 "1N4002" H 4550 2726 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4550 2425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4550 2600 50  0001 C CNN
+	1    4550 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 3300 2900 0    79   ~ 16
+230V/18V
+Wire Notes Line
+	4650 4500 1050 4500
+Wire Notes Line
+	4650 7200 4650 4500
+Wire Notes Line
+	1050 7200 4650 7200
+Wire Notes Line
+	1050 4500 1050 7200
+Text GLabel 3500 6250 2    50   Output ~ 0
+-2V
+Text GLabel 3500 5200 2    50   Output ~ 0
++2V
+Connection ~ 3100 6250
+Wire Wire Line
+	3100 6250 3500 6250
+Connection ~ 3100 5200
+Wire Wire Line
+	3100 5200 3500 5200
+Wire Wire Line
+	3100 5900 3100 6250
+$Comp
+L power:-12V #PWR0204
+U 1 1 60E0F0C4
+P 2050 6850
+F 0 "#PWR0204" H 2050 6950 50  0001 C CNN
+F 1 "-12V" H 2065 7023 50  0000 C CNN
+F 2 "" H 2050 6850 50  0001 C CNN
+F 3 "" H 2050 6850 50  0001 C CNN
+	1    2050 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0203
+U 1 1 60E09EF5
+P 2050 4850
+F 0 "#PWR0203" H 2050 4700 50  0001 C CNN
+F 1 "+12V" H 2065 5023 50  0000 C CNN
+F 2 "" H 2050 4850 50  0001 C CNN
+F 3 "" H 2050 4850 50  0001 C CNN
+	1    2050 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 5800
+Wire Wire Line
+	2050 5800 2050 5900
+Wire Wire Line
+	2050 6850 2050 6750
+Wire Wire Line
+	2050 6350 2050 6450
+Connection ~ 2050 6350
+Wire Wire Line
+	2050 6350 2500 6350
+Wire Wire Line
+	2050 6200 2050 6350
+Wire Wire Line
+	2500 5900 3100 5900
+Wire Wire Line
+	2500 6150 2500 5900
+$Comp
+L Device:R R204
+U 1 1 60E051AC
+P 2050 6600
+F 0 "R204" H 2120 6646 50  0000 L CNN
+F 1 "82k" V 2050 6500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1980 6600 50  0001 C CNN
+F 3 "~" H 2050 6600 50  0001 C CNN
+	1    2050 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 60E051A6
+P 2050 6050
+F 0 "R203" H 2120 6096 50  0000 L CNN
+F 1 "18k" V 2050 5950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1980 6050 50  0001 C CNN
+F 3 "~" H 2050 6050 50  0001 C CNN
+	1    2050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U201
+U 2 1 60E051A0
+P 2800 6250
+F 0 "U201" H 2800 6050 50  0000 C CNN
+F 1 "TL072" H 2750 6250 50  0000 C CNN
+F 2 "OHMCODER:TL072-SOIC-8" H 2800 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2800 6250 50  0001 C CNN
+	2    2800 6250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5800 2050 5700
+Wire Wire Line
+	1500 5800 2050 5800
+$Comp
+L power:GND #PWR0202
+U 1 1 60DFF68C
+P 1500 5800
+F 0 "#PWR0202" H 1500 5550 50  0001 C CNN
+F 1 "GND" V 1505 5672 50  0000 R CNN
+F 2 "" H 1500 5800 50  0001 C CNN
+F 3 "" H 1500 5800 50  0001 C CNN
+	1    1500 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 5300 2050 5400
+Connection ~ 2050 5300
+Wire Wire Line
+	2050 5300 2500 5300
+Wire Wire Line
+	2050 5150 2050 5300
+Wire Wire Line
+	3100 4850 3100 5200
+Wire Wire Line
+	2500 4850 3100 4850
+Wire Wire Line
+	2500 5100 2500 4850
+$Comp
+L Device:R R202
+U 1 1 60DEA562
+P 2050 5550
+F 0 "R202" H 2120 5596 50  0000 L CNN
+F 1 "18k" V 2050 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1980 5550 50  0001 C CNN
+F 3 "~" H 2050 5550 50  0001 C CNN
+	1    2050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R201
+U 1 1 60DE9429
+P 2050 5000
+F 0 "R201" H 2120 5046 50  0000 L CNN
+F 1 "82k" V 2050 4900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1980 5000 50  0001 C CNN
+F 3 "~" H 2050 5000 50  0001 C CNN
+	1    2050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0207
+U 1 1 60DE60E7
+P 4300 6250
+F 0 "#PWR0207" H 4300 6350 50  0001 C CNN
+F 1 "-12V" H 4315 6423 50  0000 C CNN
+F 2 "" H 4300 6250 50  0001 C CNN
+F 3 "" H 4300 6250 50  0001 C CNN
+	1    4300 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0206
+U 1 1 60DE5AC5
+P 4300 5150
+F 0 "#PWR0206" H 4300 5000 50  0001 C CNN
+F 1 "+12V" H 4315 5323 50  0000 C CNN
+F 2 "" H 4300 5150 50  0001 C CNN
+F 3 "" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U201
+U 3 1 60DE37E4
+P 4400 5750
+F 0 "U201" H 4358 5796 50  0000 L CNN
+F 1 "TL072" H 4358 5705 50  0000 L CNN
+F 2 "OHMCODER:TL072-SOIC-8" H 4400 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 5750 50  0001 C CNN
+	3    4400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U201
+U 1 1 60DDE0F6
+P 2800 5200
+F 0 "U201" H 2800 5000 50  0000 C CNN
+F 1 "TL072" H 2750 5200 50  0000 C CNN
+F 2 "OHMCODER:TL072-SOIC-8" H 2800 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2800 5200 50  0001 C CNN
+	1    2800 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L OHMCODER:VPP36-140 T201
+U 1 1 60B4089C
+P 3600 2100
+F 0 "T201" H 3600 1386 50  0000 C CNN
+F 1 "VPP36-140" H 3600 1477 50  0000 C CNN
+F 2 "OHMCODER:XFMR_VPP36-140" H 3600 2100 50  0001 L BNN
+F 3 "" H 3600 2100 50  0001 L BNN
+F 4 "IPC-7251" H 3600 2100 50  0001 L BNN "STANDARD"
+F 5 "TRIAD" H 3600 2100 50  0001 L BNN "MANUFACTURER"
+	1    3600 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2000 3300 2200
+Wire Wire Line
+	4250 1600 3900 1600
+Connection ~ 4250 1600
+Wire Wire Line
+	4100 2600 3900 2600
+Connection ~ 4100 2600
+Wire Wire Line
+	1700 1800 1700 2600
+$Comp
+L power:+12V #PWR0211
+U 1 1 60C02B67
+P 10700 900
+F 0 "#PWR0211" H 10700 750 50  0001 C CNN
+F 1 "+12V" H 10715 1073 50  0000 C CNN
+F 2 "" H 10700 900 50  0001 C CNN
+F 3 "" H 10700 900 50  0001 C CNN
+	1    10700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 900  10700 1150
+$Comp
+L Device:R R205
+U 1 1 60C072F3
+P 10700 1850
+F 0 "R205" H 10770 1896 50  0000 L CNN
+F 1 "470" H 10770 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10630 1850 50  0001 C CNN
+F 3 "~" H 10700 1850 50  0001 C CNN
+	1    10700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1450 10700 1700
+Wire Wire Line
+	10700 2000 10700 2350
+$Comp
+L power:GND #PWR0212
+U 1 1 60C0CD84
+P 10700 2350
+F 0 "#PWR0212" H 10700 2100 50  0001 C CNN
+F 1 "GND" H 10705 2177 50  0000 C CNN
+F 2 "" H 10700 2350 50  0001 C CNN
+F 3 "" H 10700 2350 50  0001 C CNN
+	1    10700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1800 1700 1800
+Wire Wire Line
+	1050 1700 3100 1700
+Wire Wire Line
+	3100 1700 3100 1600
+$Comp
+L Device:C_Small C202
+U 1 1 612E6373
+P 3850 5950
+F 0 "C202" H 3942 5996 50  0000 L CNN
+F 1 "100n" H 3942 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3850 5950 50  0001 C CNN
+F 3 "~" H 3850 5950 50  0001 C CNN
+	1    3850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C201
+U 1 1 612E7208
+P 3850 5550
+F 0 "C201" H 3942 5596 50  0000 L CNN
+F 1 "100n" H 3942 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3850 5550 50  0001 C CNN
+F 3 "~" H 3850 5550 50  0001 C CNN
+	1    3850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6050 4300 6050
+Wire Wire Line
+	4300 6250 4300 6050
+Connection ~ 4300 6050
+Wire Wire Line
+	4300 5450 4300 5150
+Wire Wire Line
+	4300 5450 3850 5450
+Connection ~ 4300 5450
+Wire Wire Line
+	3850 5650 3850 5750
+$Comp
+L power:GND #PWR0205
+U 1 1 612FBC42
+P 3600 5750
+F 0 "#PWR0205" H 3600 5500 50  0001 C CNN
+F 1 "GND" H 3605 5577 50  0000 C CNN
+F 2 "" H 3600 5750 50  0001 C CNN
+F 3 "" H 3600 5750 50  0001 C CNN
+	1    3600 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5750 3850 5750
+Connection ~ 3850 5750
+Wire Wire Line
+	3850 5750 3850 5850
+$Comp
+L Device:CP C209
+U 1 1 61183B1E
+P 8100 1850
+F 0 "C209" H 8250 1900 50  0000 L CNN
+F 1 "100u" H 8250 1800 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8138 1700 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/860010473007.pdf" H 8100 1850 50  0001 C CNN
+F 4 "Electrolytic" H 8250 1700 50  0000 L CNN "Type"
+	1    8100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0208
+U 1 1 61183B24
+P 9400 1600
+F 0 "#PWR0208" H 9400 1450 50  0001 C CNN
+F 1 "+12V" H 9415 1773 50  0000 C CNN
+F 2 "" H 9400 1600 50  0001 C CNN
+F 3 "" H 9400 1600 50  0001 C CNN
+	1    9400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0210
+U 1 1 61183B2A
+P 9550 2250
+F 0 "#PWR0210" H 9550 2000 50  0001 C CNN
+F 1 "GND" H 9555 2077 50  0000 C CNN
+F 2 "" H 9550 2250 50  0001 C CNN
+F 3 "" H 9550 2250 50  0001 C CNN
+	1    9550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1900 7000 2150
+Wire Wire Line
+	7550 2150 7000 2150
+Connection ~ 7000 2150
+Connection ~ 6450 1600
+Wire Wire Line
+	6450 1600 6700 1600
+Wire Wire Line
+	7300 1600 7550 1600
+Wire Wire Line
+	7550 1600 8100 1600
+Connection ~ 7550 1600
+$Comp
+L Device:CP C203
+U 1 1 61183B3E
+P 5900 1900
+F 0 "C203" H 6050 1950 50  0000 L CNN
+F 1 "2200u" H 6050 1850 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 5938 1750 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/specsheet/ESK228M025AL4AA.pdf" H 5900 1900 50  0001 C CNN
+F 4 "25V" H 6050 1750 50  0000 L CNN "Rating"
+F 5 "Electrolytic" H 6050 1650 50  0000 L CNN "Type"
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:uA7812 U202
+U 1 1 61183B44
+P 7000 1600
+F 0 "U202" H 7000 1842 50  0000 C CNN
+F 1 "uA7812" H 7000 1751 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7025 1450 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 7000 1550 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2150 9550 2250
+Connection ~ 7550 2150
+$Comp
+L Device:CP C210
+U 1 1 61183B4E
+P 8100 2400
+F 0 "C210" H 8250 2450 50  0000 L CNN
+F 1 "100u" H 8250 2350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8138 2250 50  0001 C CNN
+F 3 "~" H 8100 2400 50  0001 C CNN
+F 4 "Electrolytic" H 8250 2150 50  0000 L CNN "Type"
+F 5 "25V" H 8250 2250 50  0000 L CNN "Rating"
+	1    8100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2300 7000 2150
+Connection ~ 6450 2600
+Wire Wire Line
+	6450 2600 6700 2600
+Wire Wire Line
+	7300 2600 7550 2600
+Connection ~ 7550 2600
+$Comp
+L Device:CP C204
+U 1 1 61183B60
+P 5900 2400
+F 0 "C204" H 6050 2450 50  0000 L CNN
+F 1 "2200u" H 6050 2350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 5938 2250 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/specsheet/ESK228M025AL4AA.pdf" H 5900 2400 50  0001 C CNN
+F 4 "25V" H 6050 2250 50  0000 L CNN "Rating"
+F 5 "Electrolytic" H 6050 2150 50  0000 L CNN "Type"
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OHMCODER:uA7912 U203
+U 1 1 61183B66
+P 7000 2600
+F 0 "U203" H 7000 2451 50  0000 C CNN
+F 1 "uA7912" H 7000 2360 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7025 2750 50  0001 L CIN
+F 3 "https://www.ti.com/lit/ds/symlink/ua79.pdf" H 7000 2650 50  0001 C CNN
+	1    7000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2150 6450 2150
+Connection ~ 6450 2150
+$Comp
+L Device:C_Small C206
+U 1 1 61183B72
+P 6450 2400
+F 0 "C206" H 6600 2450 50  0000 L CNN
+F 1 "100n" H 6600 2350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6488 2250 50  0001 C CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/mkt/data_sheet/20/20/db/fc_2009/b32520_529.pdf" H 6450 2400 50  0001 C CNN
+F 4 "Decoupling" H 6600 2250 50  0000 L CNN "Type"
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4002 D206
+U 1 1 61183B78
+P 7000 3000
+F 0 "D206" H 7000 3217 50  0000 C CNN
+F 1 "1N4002" H 7000 3126 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7000 2825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7000 3000 50  0001 C CNN
+	1    7000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4002 D205
+U 1 1 61183B7E
+P 7000 1200
+F 0 "D205" H 7000 1417 50  0000 C CNN
+F 1 "1N4002" H 7000 1326 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7000 1025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7000 1200 50  0001 C CNN
+	1    7000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1200 7550 1200
+Wire Wire Line
+	7550 1200 7550 1600
+Wire Wire Line
+	6850 1200 6450 1200
+Wire Wire Line
+	6450 1200 6450 1600
+Wire Wire Line
+	6450 2600 6450 3000
+Wire Wire Line
+	6450 3000 6850 3000
+Wire Wire Line
+	7150 3000 7550 3000
+Wire Wire Line
+	7550 3000 7550 2600
+$Comp
+L Diode:1N4002 D207
+U 1 1 61183B8C
+P 8700 1850
+F 0 "D207" H 8700 2067 50  0000 C CNN
+F 1 "1N4002" H 8700 1976 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 1675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8700 1850 50  0001 C CNN
+	1    8700 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4002 D208
+U 1 1 61183B92
+P 8700 2400
+F 0 "D208" H 8700 2617 50  0000 C CNN
+F 1 "1N4002" H 8700 2526 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 2225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8700 2400 50  0001 C CNN
+	1    8700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 2250 8700 2150
+Connection ~ 8700 2150
+Wire Wire Line
+	8700 2150 9500 2150
+Wire Wire Line
+	8700 2000 8700 2150
+Wire Wire Line
+	8700 1700 8700 1600
+Connection ~ 8700 1600
+Wire Wire Line
+	8700 1600 9400 1600
+Wire Wire Line
+	8700 2550 8700 2600
+Connection ~ 8700 2600
+Wire Wire Line
+	8700 2600 9400 2600
+$Comp
+L power:-12V #PWR0209
+U 1 1 61183BA8
+P 9400 2600
+F 0 "#PWR0209" H 9400 2700 50  0001 C CNN
+F 1 "-12V" H 9415 2773 50  0000 C CNN
+F 2 "" H 9400 2600 50  0001 C CNN
+F 3 "" H 9400 2600 50  0001 C CNN
+	1    9400 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0202
+U 1 1 61183BAE
+P 5550 1600
+F 0 "#FLG0202" H 5550 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 1773 50  0000 C CNN
+F 2 "" H 5550 1600 50  0001 C CNN
+F 3 "~" H 5550 1600 50  0001 C CNN
+	1    5550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0203
+U 1 1 61183BB6
+P 5550 2600
+F 0 "#FLG0203" H 5550 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 2773 50  0000 C CNN
+F 2 "" H 5550 2600 50  0001 C CNN
+F 3 "~" H 5550 2600 50  0001 C CNN
+	1    5550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0204
+U 1 1 61183BBE
+P 9500 2150
+F 0 "#FLG0204" H 9500 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 9500 2323 50  0000 C CNN
+F 2 "" H 9500 2150 50  0001 C CNN
+F 3 "~" H 9500 2150 50  0001 C CNN
+	1    9500 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 2150
+Wire Wire Line
+	9500 2150 9550 2150
+$Comp
+L Device:C_Small C208
+U 1 1 61195C75
+P 7550 2400
+F 0 "C208" H 7700 2450 50  0000 L CNN
+F 1 "100n" H 7700 2350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7588 2250 50  0001 C CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/mkt/data_sheet/20/20/db/fc_2009/b32520_529.pdf" H 7550 2400 50  0001 C CNN
+F 4 "Decoupling" H 7700 2250 50  0000 L CNN "Type"
+	1    7550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C207
+U 1 1 61196452
+P 7550 1850
+F 0 "C207" H 7700 1900 50  0000 L CNN
+F 1 "100n" H 7700 1800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7588 1700 50  0001 C CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/mkt/data_sheet/20/20/db/fc_2009/b32520_529.pdf" H 7550 1850 50  0001 C CNN
+F 4 "Decoupling" H 7700 1700 50  0000 L CNN "Type"
+	1    7550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2600 8100 2600
+Wire Wire Line
+	7550 2150 8100 2150
+Wire Wire Line
+	5550 1600 5900 1600
+Wire Wire Line
+	5550 2600 5900 2600
+Wire Wire Line
+	5900 2600 5900 2550
+Connection ~ 5900 2600
+Wire Wire Line
+	5900 2600 6450 2600
+Wire Wire Line
+	5900 2250 5900 2150
+Connection ~ 5900 2150
+Wire Wire Line
+	5900 2150 6450 2150
+Wire Wire Line
+	5900 2050 5900 2150
+Wire Wire Line
+	5900 1750 5900 1600
+Connection ~ 5900 1600
+Wire Wire Line
+	5900 1600 6450 1600
+$Comp
+L Device:C_Small C205
+U 1 1 611B8E94
+P 6450 1900
+F 0 "C205" H 6600 1950 50  0000 L CNN
+F 1 "100n" H 6600 1850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6488 1750 50  0001 C CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/capacitor/film/mkt/data_sheet/20/20/db/fc_2009/b32520_529.pdf" H 6450 1900 50  0001 C CNN
+F 4 "Decoupling" H 6600 1750 50  0000 L CNN "Type"
+	1    6450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1600 7550 1750
+Wire Wire Line
+	7550 1950 7550 2150
+Wire Wire Line
+	7550 2500 7550 2600
+Wire Wire Line
+	7550 2150 7550 2300
+Wire Wire Line
+	6450 2150 6450 2300
+Wire Wire Line
+	6450 2500 6450 2600
+Wire Wire Line
+	6450 2000 6450 2150
+Wire Wire Line
+	6450 1600 6450 1800
+Wire Wire Line
+	8100 2250 8100 2150
+Connection ~ 8100 2150
+Wire Wire Line
+	8100 2150 8700 2150
+Wire Wire Line
+	8100 2550 8100 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	8100 2600 8700 2600
+Wire Wire Line
+	8100 2000 8100 2150
+Wire Wire Line
+	8100 1700 8100 1600
+Connection ~ 8100 1600
+Wire Wire Line
+	8100 1600 8700 1600
+Wire Wire Line
+	5550 1600 4900 1600
+Connection ~ 5550 1600
+Wire Wire Line
+	5550 2600 4900 2600
+Connection ~ 5550 2600
+Wire Wire Line
+	3900 2000 3900 2150
+Connection ~ 4900 1600
+Connection ~ 4900 2600
+Wire Wire Line
+	3900 2150 5900 2150
+Connection ~ 3900 2150
+Wire Wire Line
+	3900 2150 3900 2200
+$Comp
+L Connector:Conn_01x02_Female J201
+U 1 1 61603726
+P 850 1800
+F 0 "J201" H 742 1475 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 742 1566 50  0000 C CNN
+F 2 "OHMCODER:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J202
+U 1 1 6160E749
+P 9150 3900
+F 0 "J202" H 9200 4117 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 9200 4026 50  0000 C CNN
+F 2 "OHMCODER:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 9150 3900 50  0001 C CNN
+F 3 "~" H 9150 3900 50  0001 C CNN
+	1    9150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0184
+U 1 1 61613C92
+P 9550 4000
+F 0 "#PWR0184" H 9550 4100 50  0001 C CNN
+F 1 "-12V" H 9565 4173 50  0000 C CNN
+F 2 "" H 9550 4000 50  0001 C CNN
+F 3 "" H 9550 4000 50  0001 C CNN
+	1    9550 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0185
+U 1 1 6161451E
+P 8800 3900
+F 0 "#PWR0185" H 8800 3750 50  0001 C CNN
+F 1 "+12V" H 8815 4073 50  0000 C CNN
+F 2 "" H 8800 3900 50  0001 C CNN
+F 3 "" H 8800 3900 50  0001 C CNN
+	1    8800 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 3900 8950 3900
+Wire Wire Line
+	9450 4000 9550 4000
+$Comp
+L power:GND #PWR0186
+U 1 1 6161B06B
+P 8750 4000
+F 0 "#PWR0186" H 8750 3750 50  0001 C CNN
+F 1 "GND" H 8755 3827 50  0000 C CNN
+F 2 "" H 8750 4000 50  0001 C CNN
+F 3 "" H 8750 4000 50  0001 C CNN
+	1    8750 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 4000 8950 4000
+$Comp
+L power:GND #PWR0187
+U 1 1 6161F5FA
+P 9650 3900
+F 0 "#PWR0187" H 9650 3650 50  0001 C CNN
+F 1 "GND" H 9655 3727 50  0000 C CNN
+F 2 "" H 9650 3900 50  0001 C CNN
+F 3 "" H 9650 3900 50  0001 C CNN
+	1    9650 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9450 3900 9650 3900
+$Comp
+L Device:LED D209
+U 1 1 61720570
+P 10700 1300
+F 0 "D209" V 10739 1182 50  0000 R CNN
+F 1 "LED" V 10648 1182 50  0000 R CNN
+F 2 "OHMCODER:TE-6-440054-3" H 10700 1300 50  0001 C CNN
+F 3 "~" H 10700 1300 50  0001 C CNN
+	1    10700 1300
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

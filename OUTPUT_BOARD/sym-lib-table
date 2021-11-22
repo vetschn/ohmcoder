@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OHMCODER)(type Legacy)(uri ${KIPRJMOD}/OHMCODER.lib)(options "")(descr ""))
+)

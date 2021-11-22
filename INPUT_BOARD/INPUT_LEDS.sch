@@ -1,0 +1,542 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date "2021-05-26"
+Rev "1"
+Comp "OHMMUSICCOLLECTIVE"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1200 1500 0    50   Input ~ 0
+IN
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 60C26286
+P 2550 1600
+AR Path="/60A0F3D9/60C211A9/60C26286" Ref="U?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C26286" Ref="U?"  Part="1" 
+AR Path="/60C60815/60C26286" Ref="U3"  Part="1" 
+AR Path="/60C211A9/60C26286" Ref="U4"  Part="1" 
+F 0 "U3" H 2500 1850 50  0000 C CNN
+F 1 "TL074" H 2500 1600 50  0000 C CNN
+F 2 "OHMCODER:TL074-SOIC-14" H 2500 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2600 1800 50  0001 C CNN
+	1    2550 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1500 1200 1500
+$Comp
+L Diode:1N4148 D?
+U 1 1 60C28ED2
+P 3100 1800
+AR Path="/60A0F3D9/60C211A9/60C28ED2" Ref="D?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C28ED2" Ref="D?"  Part="1" 
+AR Path="/60C60815/60C28ED2" Ref="D1"  Part="1" 
+AR Path="/60C211A9/60C28ED2" Ref="D3"  Part="1" 
+F 0 "D1" V 3146 1720 50  0000 R CNN
+F 1 "1N4148" V 3055 1720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3100 1625 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3100 1800 50  0001 C CNN
+	1    3100 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 1600 3100 1600
+Wire Wire Line
+	3100 1600 3100 1650
+$Comp
+L Device:R R?
+U 1 1 60C2C287
+P 3100 2450
+AR Path="/60A0F3D9/60C211A9/60C2C287" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C2C287" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C2C287" Ref="R21"  Part="1" 
+AR Path="/60C211A9/60C2C287" Ref="R29"  Part="1" 
+F 0 "R21" H 3170 2496 50  0000 L CNN
+F 1 "4.7k" V 3100 2350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3030 2450 50  0001 C CNN
+F 3 "~" H 3100 2450 50  0001 C CNN
+	1    3100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2300 3100 2100
+Wire Wire Line
+	2250 1700 2250 2100
+Wire Wire Line
+	2250 2100 3100 2100
+Connection ~ 3100 2100
+Wire Wire Line
+	3100 2100 3100 1950
+Wire Wire Line
+	3100 2600 3100 2850
+$Comp
+L Device:C C?
+U 1 1 60C2F152
+P 3550 2450
+AR Path="/60A0F3D9/60C211A9/60C2F152" Ref="C?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C2F152" Ref="C?"  Part="1" 
+AR Path="/60C60815/60C2F152" Ref="C7"  Part="1" 
+AR Path="/60C211A9/60C2F152" Ref="C8"  Part="1" 
+F 0 "C7" H 3665 2496 50  0000 L CNN
+F 1 "10u" H 3665 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3588 2300 50  0001 C CNN
+F 3 "~" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2100 3550 2100
+Wire Wire Line
+	3550 2100 3550 2300
+Wire Wire Line
+	3550 2600 3550 2850
+$Comp
+L Amplifier_Operational:TL074 U?
+U 3 1 60C305C0
+P 5150 3000
+AR Path="/60A0F3D9/60C211A9/60C305C0" Ref="U?"  Part="3" 
+AR Path="/60A0F3D9/60C60815/60C305C0" Ref="U?"  Part="3" 
+AR Path="/60C60815/60C305C0" Ref="U3"  Part="3" 
+AR Path="/60C211A9/60C305C0" Ref="U4"  Part="3" 
+F 0 "U3" H 5100 3200 50  0000 C CNN
+F 1 "TL074" H 5100 3000 50  0000 C CNN
+F 2 "OHMCODER:TL074-SOIC-14" H 5100 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5200 3200 50  0001 C CNN
+	3    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 4 1 60C34AED
+P 5150 3750
+AR Path="/60A0F3D9/60C211A9/60C34AED" Ref="U?"  Part="4" 
+AR Path="/60A0F3D9/60C60815/60C34AED" Ref="U?"  Part="4" 
+AR Path="/60C60815/60C34AED" Ref="U3"  Part="4" 
+AR Path="/60C211A9/60C34AED" Ref="U4"  Part="4" 
+F 0 "U3" H 5100 3950 50  0000 C CNN
+F 1 "TL074" H 5100 3750 50  0000 C CNN
+F 2 "OHMCODER:TL074-SOIC-14" H 5100 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5200 3950 50  0001 C CNN
+	4    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C384B8
+P 4500 3500
+AR Path="/60A0F3D9/60C211A9/60C384B8" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C384B8" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C384B8" Ref="R24"  Part="1" 
+AR Path="/60C211A9/60C384B8" Ref="R32"  Part="1" 
+F 0 "R24" H 4570 3546 50  0000 L CNN
+F 1 "33k" V 4500 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4430 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3350 4500 3100
+Wire Wire Line
+	4500 3100 4850 3100
+Wire Wire Line
+	4850 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 3650
+Connection ~ 3550 2100
+Wire Wire Line
+	4700 2900 4700 3650
+Wire Wire Line
+	4700 3650 4850 3650
+Wire Wire Line
+	4700 2900 4850 2900
+Wire Wire Line
+	4500 3850 4500 4050
+Connection ~ 4500 3850
+$Comp
+L Device:R R?
+U 1 1 60C3B4AB
+P 4500 4200
+AR Path="/60A0F3D9/60C211A9/60C3B4AB" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3B4AB" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C3B4AB" Ref="R25"  Part="1" 
+AR Path="/60C211A9/60C3B4AB" Ref="R33"  Part="1" 
+F 0 "R25" H 4570 4246 50  0000 L CNN
+F 1 "22k" V 4500 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4430 4200 50  0001 C CNN
+F 3 "~" H 4500 4200 50  0001 C CNN
+	1    4500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C3BA14
+P 4500 1700
+AR Path="/60A0F3D9/60C211A9/60C3BA14" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3BA14" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C3BA14" Ref="R22"  Part="1" 
+AR Path="/60C211A9/60C3BA14" Ref="R30"  Part="1" 
+F 0 "R22" H 4570 1746 50  0000 L CNN
+F 1 "27k" V 4500 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4430 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1550 4500 1050
+Wire Wire Line
+	4500 4350 4500 4650
+$Comp
+L power:GND #PWR?
+U 1 1 60C3DFBD
+P 4500 4650
+AR Path="/60A0F3D9/60C211A9/60C3DFBD" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3DFBD" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C3DFBD" Ref="#PWR019"  Part="1" 
+AR Path="/60C211A9/60C3DFBD" Ref="#PWR026"  Part="1" 
+F 0 "#PWR019" H 4500 4400 50  0001 C CNN
+F 1 "GND" H 4505 4477 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C3E8EA
+P 3550 2850
+AR Path="/60A0F3D9/60C211A9/60C3E8EA" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3E8EA" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C3E8EA" Ref="#PWR018"  Part="1" 
+AR Path="/60C211A9/60C3E8EA" Ref="#PWR025"  Part="1" 
+F 0 "#PWR018" H 3550 2600 50  0001 C CNN
+F 1 "GND" H 3555 2677 50  0000 C CNN
+F 2 "" H 3550 2850 50  0001 C CNN
+F 3 "" H 3550 2850 50  0001 C CNN
+	1    3550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C3EB50
+P 3100 2850
+AR Path="/60A0F3D9/60C211A9/60C3EB50" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3EB50" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C3EB50" Ref="#PWR017"  Part="1" 
+AR Path="/60C211A9/60C3EB50" Ref="#PWR024"  Part="1" 
+F 0 "#PWR017" H 3100 2600 50  0001 C CNN
+F 1 "GND" H 3105 2677 50  0000 C CNN
+F 2 "" H 3100 2850 50  0001 C CNN
+F 3 "" H 3100 2850 50  0001 C CNN
+	1    3100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C3EF33
+P 8300 3400
+AR Path="/60A0F3D9/60C211A9/60C3EF33" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C3EF33" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C3EF33" Ref="#PWR021"  Part="1" 
+AR Path="/60C211A9/60C3EF33" Ref="#PWR028"  Part="1" 
+F 0 "#PWR021" H 8300 3150 50  0001 C CNN
+F 1 "GND" H 8305 3227 50  0000 C CNN
+F 2 "" H 8300 3400 50  0001 C CNN
+F 3 "" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3000 5550 3000
+Wire Wire Line
+	5550 3000 5550 3300
+Wire Wire Line
+	5550 3500 5550 3750
+Wire Wire Line
+	5550 3750 5450 3750
+$Comp
+L Device:R R?
+U 1 1 60C42FD6
+P 6100 3300
+AR Path="/60A0F3D9/60C211A9/60C42FD6" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C42FD6" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C42FD6" Ref="R26"  Part="1" 
+AR Path="/60C211A9/60C42FD6" Ref="R34"  Part="1" 
+F 0 "R26" V 6000 3250 50  0000 L CNN
+F 1 "470" V 6100 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6030 3300 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C43AA8
+P 6100 3500
+AR Path="/60A0F3D9/60C211A9/60C43AA8" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C43AA8" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C43AA8" Ref="R27"  Part="1" 
+AR Path="/60C211A9/60C43AA8" Ref="R35"  Part="1" 
+F 0 "R27" V 6200 3450 50  0000 L CNN
+F 1 "470" V 6100 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6030 3500 50  0001 C CNN
+F 3 "~" H 6100 3500 50  0001 C CNN
+	1    6100 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3400 8300 3400
+Text GLabel 4500 1050 1    50   Input Italic 10
++2V
+Text Notes 4200 3850 0    50   Italic 0
+440mV
+Text Notes 4300 3100 0    50   Italic 0
+1.1V\n
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 60C4B75A
+P 5150 2200
+AR Path="/60A0F3D9/60C211A9/60C4B75A" Ref="U?"  Part="2" 
+AR Path="/60A0F3D9/60C60815/60C4B75A" Ref="U?"  Part="2" 
+AR Path="/60C60815/60C4B75A" Ref="U3"  Part="2" 
+AR Path="/60C211A9/60C4B75A" Ref="U4"  Part="2" 
+F 0 "U3" H 5100 2450 50  0000 C CNN
+F 1 "TL074" H 5100 2200 50  0000 C CNN
+F 2 "OHMCODER:TL074-SOIC-14" H 5100 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5200 2400 50  0001 C CNN
+	2    5150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 60C4F3DA
+P 8800 1350
+AR Path="/60A0F3D9/60C211A9/60C4F3DA" Ref="U?"  Part="5" 
+AR Path="/60A0F3D9/60C60815/60C4F3DA" Ref="U?"  Part="5" 
+AR Path="/60C60815/60C4F3DA" Ref="U3"  Part="5" 
+AR Path="/60C211A9/60C4F3DA" Ref="U4"  Part="5" 
+F 0 "U3" H 8758 1396 50  0000 L CNN
+F 1 "TL074" H 8758 1305 50  0000 L CNN
+F 2 "OHMCODER:TL074-SOIC-14" H 8750 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8850 1550 50  0001 C CNN
+	5    8800 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 60C51DC8
+P 8700 1750
+AR Path="/60A0F3D9/60C211A9/60C51DC8" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C51DC8" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C51DC8" Ref="#PWR023"  Part="1" 
+AR Path="/60C211A9/60C51DC8" Ref="#PWR030"  Part="1" 
+F 0 "#PWR023" H 8700 1850 50  0001 C CNN
+F 1 "-12V" H 8715 1923 50  0000 C CNN
+F 2 "" H 8700 1750 50  0001 C CNN
+F 3 "" H 8700 1750 50  0001 C CNN
+	1    8700 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60C52C1A
+P 8700 950
+AR Path="/60A0F3D9/60C211A9/60C52C1A" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60C52C1A" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60C52C1A" Ref="#PWR022"  Part="1" 
+AR Path="/60C211A9/60C52C1A" Ref="#PWR029"  Part="1" 
+F 0 "#PWR022" H 8700 800 50  0001 C CNN
+F 1 "+12V" H 8715 1123 50  0000 C CNN
+F 2 "" H 8700 950 50  0001 C CNN
+F 3 "" H 8700 950 50  0001 C CNN
+	1    8700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612ADEDE
+P 4500 2600
+AR Path="/60A0F3D9/60C211A9/612ADEDE" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/612ADEDE" Ref="R?"  Part="1" 
+AR Path="/60C60815/612ADEDE" Ref="R23"  Part="1" 
+AR Path="/60C211A9/612ADEDE" Ref="R31"  Part="1" 
+F 0 "R23" H 4570 2646 50  0000 L CNN
+F 1 "18k" V 4500 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4430 2600 50  0001 C CNN
+F 3 "~" H 4500 2600 50  0001 C CNN
+	1    4500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2100 4700 2100
+Wire Wire Line
+	4850 2300 4500 2300
+Wire Wire Line
+	4500 2300 4500 2450
+Wire Wire Line
+	4500 2750 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	4500 1850 4500 2300
+Connection ~ 4500 2300
+Text Notes 4250 2300 0    50   Italic 0
+1.46V\n
+Text Notes 5700 3650 0    118  ~ 0
+G
+Text Notes 5700 3300 0    118  ~ 0
+R
+$Comp
+L Device:LED_Dual_ACA D?
+U 1 1 60C8A712
+P 7250 3400
+AR Path="/60A0F3D9/60C60815/60C8A712" Ref="D?"  Part="1" 
+AR Path="/60A0F3D9/60C211A9/60C8A712" Ref="D?"  Part="1" 
+AR Path="/60C60815/60C8A712" Ref="D2"  Part="1" 
+AR Path="/60C211A9/60C8A712" Ref="D4"  Part="1" 
+F 0 "D2" H 7250 3825 50  0000 C CNN
+F 1 "LED_Dual_ACA" H 7250 3734 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm-3" H 7250 3400 50  0001 C CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS20-2001-645/LTL1BEKVJNN.pdf" H 7250 3400 50  0001 C CNN
+	1    7250 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3300 5950 3300
+Wire Wire Line
+	5550 3500 5950 3500
+Wire Wire Line
+	6250 3300 6950 3300
+Wire Wire Line
+	6250 3500 6950 3500
+Wire Wire Line
+	6950 3500 6950 4000
+Connection ~ 6950 3500
+$Comp
+L Device:R R?
+U 1 1 60C98503
+P 6500 4200
+AR Path="/60A0F3D9/60C60815/60C98503" Ref="R?"  Part="1" 
+AR Path="/60A0F3D9/60C211A9/60C98503" Ref="R?"  Part="1" 
+AR Path="/60C60815/60C98503" Ref="R28"  Part="1" 
+AR Path="/60C211A9/60C98503" Ref="R36"  Part="1" 
+F 0 "R28" V 6600 4150 50  0000 L CNN
+F 1 "1k" V 6500 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6430 4200 50  0001 C CNN
+F 3 "~" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 2200 6350 4200
+Wire Wire Line
+	6350 2200 5450 2200
+$Comp
+L power:GND #PWR?
+U 1 1 60CA25AD
+P 6950 4700
+AR Path="/60A0F3D9/60C60815/60CA25AD" Ref="#PWR?"  Part="1" 
+AR Path="/60A0F3D9/60C211A9/60CA25AD" Ref="#PWR?"  Part="1" 
+AR Path="/60C60815/60CA25AD" Ref="#PWR020"  Part="1" 
+AR Path="/60C211A9/60CA25AD" Ref="#PWR027"  Part="1" 
+F 0 "#PWR020" H 6950 4450 50  0001 C CNN
+F 1 "GND" H 6955 4527 50  0000 C CNN
+F 2 "" H 6950 4700 50  0001 C CNN
+F 3 "" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4400 6950 4700
+$Comp
+L Transistor_BJT:MMBTA42 Q?
+U 1 1 60CD1243
+P 6850 4200
+AR Path="/60A0F3D9/60C211A9/60CD1243" Ref="Q?"  Part="1" 
+AR Path="/60A0F3D9/60C60815/60CD1243" Ref="Q?"  Part="1" 
+AR Path="/60C60815/60CD1243" Ref="Q1"  Part="1" 
+AR Path="/60C211A9/60CD1243" Ref="Q2"  Part="1" 
+F 0 "Q1" H 7041 4246 50  0000 L CNN
+F 1 "MMBTA42" H 7041 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7050 4125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 6850 4200 50  0001 L CNN
+	1    6850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2100 4700 2900
+Connection ~ 4700 2100
+Wire Wire Line
+	4700 2100 4850 2100
+Connection ~ 4700 2900
+$Comp
+L Device:C_Small C13
+U 1 1 60FE6B82
+P 8200 1100
+AR Path="/60C60815/60FE6B82" Ref="C13"  Part="1" 
+AR Path="/60C211A9/60FE6B82" Ref="C15"  Part="1" 
+F 0 "C13" H 8292 1146 50  0000 L CNN
+F 1 "100n" H 8292 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8200 1100 50  0001 C CNN
+F 3 "~" H 8200 1100 50  0001 C CNN
+	1    8200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 60FE79BA
+P 8200 1600
+AR Path="/60C60815/60FE79BA" Ref="C14"  Part="1" 
+AR Path="/60C211A9/60FE79BA" Ref="C16"  Part="1" 
+F 0 "C14" H 8292 1646 50  0000 L CNN
+F 1 "100n" H 8292 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8200 1600 50  0001 C CNN
+F 3 "~" H 8200 1600 50  0001 C CNN
+	1    8200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 950  8200 950 
+Wire Wire Line
+	8200 950  8200 1000
+Wire Wire Line
+	8200 1200 8200 1350
+Wire Wire Line
+	8200 1350 7850 1350
+Wire Wire Line
+	7850 1350 7850 1400
+Connection ~ 8200 1350
+Wire Wire Line
+	8200 1350 8200 1500
+Wire Wire Line
+	8200 1700 8200 1750
+Wire Wire Line
+	8200 1750 8700 1750
+Wire Wire Line
+	8700 1650 8700 1750
+Connection ~ 8700 1750
+Wire Wire Line
+	8700 1050 8700 950 
+Connection ~ 8700 950 
+$Comp
+L power:GND #PWR0106
+U 1 1 60FEC619
+P 7850 1400
+AR Path="/60C60815/60FEC619" Ref="#PWR0106"  Part="1" 
+AR Path="/60C211A9/60FEC619" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0106" H 7850 1150 50  0001 C CNN
+F 1 "GND" H 7855 1227 50  0000 C CNN
+F 2 "" H 7850 1400 50  0001 C CNN
+F 3 "" H 7850 1400 50  0001 C CNN
+	1    7850 1400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
