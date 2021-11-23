@@ -1,5 +1,6 @@
-# ohmcoder
+# OHMCODER
 
+*Placeholder README from:*
 https://www.reddit.com/r/copypasta/comments/q9ua60/what_if_i_told_you_that_electronics_were_magic/
 
 ## Electronics are Magic.
