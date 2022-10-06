@@ -42,7 +42,7 @@ used.
 
 Notice, that the nice thing about these filters is, that we only need to
 change the capacitor values to get different center frequencies, as seen
-in the PICE simulation below.
+in the SPICE simulation below.
 
 ![bp_filter_ac](./docs/images/bp_filter_ac.png)
 
