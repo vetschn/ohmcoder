@@ -74,7 +74,7 @@ filtered precision rectifier signal to follow the program envelope.
 
 The majority of the spectral energy of speech amplitude modulation lies
 below about 15Hz, i. e. the mean time between syllables is about
-1/15Hz. The filter is chosen such that we follow this
+1/15Hz (see [speech_modulation.ipynb](./auxiliary/notebooks/speech_modulation.ipynb) for an example). The filter is chosen such that we follow this
 amplitude modulation.
 
 ![env_follower](./docs/images/env_follower.png)
